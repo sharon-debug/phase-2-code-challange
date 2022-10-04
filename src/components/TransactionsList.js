@@ -1,11 +1,9 @@
 import React from "react";
 import Transaction from "./Transaction";
-
 function TransactionsList({transactions , search}) {
   const filteredTransactions = transactions.filter ((transaction) =>{
 return transaction.description.includes(search);
   });
- 
   console.log(search)
   const transactionComponents = filteredTransactions.map(transaction =>{
     return <Transaction key={transaction.id} transaction ={transaction } />;
@@ -28,7 +26,6 @@ return transaction.description.includes(search);
           </th>
         </tr>
         {transactionComponents}
-      
       </tbody>
     </table>
   );

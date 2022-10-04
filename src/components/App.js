@@ -10,6 +10,6 @@ function App() {
       <AccountContainer />
     </div>
   );
-}
 
+}
 export default App;

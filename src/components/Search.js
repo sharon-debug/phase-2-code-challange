@@ -1,5 +1,4 @@
 import React from "react";
-
 function Search({search , setSearch}) {
   return (
     <div className="ui large fluid icon input">
@@ -15,5 +14,4 @@ function Search({search , setSearch}) {
     </div>
   );
 }
-
-export default Search;
+export default Search; 
